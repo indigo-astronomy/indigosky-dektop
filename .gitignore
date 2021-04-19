@@ -1,0 +1,5 @@
+debian/.debhelper
+debian/files
+debian/indigosky-desktop.substvars
+debian/indigosky-desktop
+
