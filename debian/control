@@ -1,0 +1,14 @@
+Source: indigosky-desktop
+Section: science
+Priority: optional
+Maintainer: Rumen Bogdanovski <rumen@skyarchive.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://www.indigo-astronomy.org
+Vcs-Git: git://github.com/indigo-astronomy/indigosky.git
+
+Package: indigosky-desktop
+Architecture: all
+Depends: xfce4, xfce4-terminal, lightdm, xinit, xrdp, materia-gtk-theme, indigo-control-panel, ain-imager
+Description: IndigoSky Desktop
+ IndigoSky is a Linux sidtibution for astrophotography based on indigo framework.

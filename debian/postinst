@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml.orig
+cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+install -d -o indigo -g indigo /home/indigo/Desktop/
+install -o indigo -g indigo -m 755 /usr/share/applications/ain-imager.desktop /home/indigo/Desktop/
+install -o indigo -g indigo -m 755 /usr/share/applications/indigo-control-panel.desktop /home/indigo/Desktop/
+
+exit 0

@@ -1,0 +1,7 @@
+xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml
+xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml
+xfce4/xfconf/xfce-perchannel-xml/xsettings.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd
+
+artwork/backgrounds/* usr/share/backgrounds
+artwork/icons/* usr/share/icons
