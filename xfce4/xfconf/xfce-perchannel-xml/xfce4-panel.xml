@@ -26,7 +26,7 @@
       <property name="show-button-title" type="bool" value="true"/>
       <property name="button-icon" type="string" value="/usr/share/icons/indigosky/indigosky.png"/>
       <property name="show-generic-names" type="bool" value="true"/>
-      <property name="button-title" type="string" value="IndigoSky"/>
+      <property name="button-title" type="string" value=""/>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
       <property name="show-handle" type="bool" value="false"/>
