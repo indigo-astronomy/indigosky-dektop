@@ -1,8 +1,16 @@
 #!/bin/sh
 set -e
 
-file="/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml.orig"
-
+file="/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml.backup"
 [ -f ${file} ] && cp ${file} /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+file="/usr/share/applications/exo-web-browser.desktop"
+[ -f ${file}.backup ] && mv ${file}.backup ${file}
+
+file="/usr/share/applications/exo-mail-reader.desktop"
+[ -f ${file}.backup ] && mv ${file}.backup ${file}
+
+file="/usr/share/applications/pavucontrol.desktop"
+[ -f ${file}.backup ] && mv ${file}.backup ${file}
 
 exit 0

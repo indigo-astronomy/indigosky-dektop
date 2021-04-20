@@ -1,8 +1,20 @@
 #!/bin/sh
 set -e
 
-cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml.orig
+cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml.backup
 cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd/xsettings.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+file="/usr/share/applications/exo-web-browser.desktop"
+[ -f ${file} ] && mv ${file} ${file}.backup
+
+file="/usr/share/applications/exo-mail-reader.desktop"
+[ -f ${file} ] && mv ${file} ${file}.backup
+
+file="/usr/share/applications/exo-mail-reader.desktop"
+[ -f ${file} ] && mv ${file} ${file}.backup
+
+file="/usr/share/applications/pavucontrol.desktop"
+[ -f ${file} ] && mv ${file} ${file}.backup
 
 install -d -o indigo -g indigo /home/indigo/Desktop/
 install -o indigo -g indigo -m 755 /usr/share/applications/ain-imager.desktop /home/indigo/Desktop/
