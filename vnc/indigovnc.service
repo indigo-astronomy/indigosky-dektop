@@ -1,0 +1,18 @@
+[Unit]
+Description=Remote desktop service (VNC)
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Type=forking
+User=indigo
+Group=indigo
+WorkingDirectory=/home/indigo
+
+Restart=always
+RestartSec=1s
+
+ExecStart=/usr/bin/vncserver :0 -geometry 1600x900 -localhost no -autokill -PAMService=login -PlainUsers=indigo -SecurityTypes=TLSPlain,VncAuth
+
+[Install]
+WantedBy=default.target

@@ -5,3 +5,7 @@ xfce4/xfconf/xfce-perchannel-xml/xsettings.xml etc/xdg/xfce4/xfconf/xfce-perchan
 
 artwork/backgrounds/* usr/share/backgrounds
 artwork/icons/* usr/share/icons
+
+vnc/indigovnc.service /lib/systemd/system
+vnc/passwd /usr/share/indigosky-dektop
+vnc/xstartup /usr/share/indigosky-dektop

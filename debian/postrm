@@ -13,4 +13,6 @@ file="/usr/share/applications/exo-mail-reader.desktop"
 file="/usr/share/applications/pavucontrol.desktop"
 [ -f ${file}.backup ] && mv ${file}.backup ${file}
 
+systemctl daemon-reload
+
 exit 0
