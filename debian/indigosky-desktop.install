@@ -9,3 +9,5 @@ artwork/icons/* usr/share/icons
 vnc/indigovnc.service /lib/systemd/system
 vnc/passwd /usr/share/indigosky-dektop
 vnc/xstartup /usr/share/indigosky-dektop
+
+lightdm/lightdm-gtk-greeter.conf etc/lightdm/lightdm-gtk-greeter.conf-isd

@@ -25,7 +25,12 @@ install -d -o indigo -g indigo ${vncdir}
 install -o indigo -g indigo -m 600 /usr/share/indigosky-dektop/passwd ${vncdir}
 install -o indigo -g indigo -m 755 /usr/share/indigosky-dektop/xstartup ${vncdir}
 
+lightdmdir=/etc/lightdm/
+cp ${lightdmdir}/lightdm-gtk-greeter.conf ${lightdmdir}/lightdm-gtk-greeter.conf.backup
+cp ${lightdmdir}/lightdm-gtk-greeter.conf-isd/lightdm-gtk-greeter.conf ${lightdmdir}/lightdm-gtk-greeter.conf
+
 systemctl enable indigovnc.service
 systemctl start indigovnc.service
+systemctl restart lightdm
 
 exit 0
