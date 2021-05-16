@@ -17,8 +17,11 @@ file="/usr/share/applications/pavucontrol.desktop"
 [ -f ${file} ] && mv ${file} ${file}.backup
 
 install -d -o indigo -g indigo /home/indigo/Desktop/
-install -o indigo -g indigo -m 755 /usr/share/applications/ain-imager.desktop /home/indigo/Desktop/
 install -o indigo -g indigo -m 755 /usr/share/applications/indigo-control-panel.desktop /home/indigo/Desktop/
+install -o indigo -g indigo -m 755 /usr/share/applications/ain-imager.desktop /home/indigo/Desktop/
+file="/usr/share/applications/ain-viewer.desktop"
+[ -f ${file} ] && install -o indigo -g indigo -m 755 ${file} /home/indigo/Desktop/
+
 
 vncdir=/home/indigo/.vnc/
 install -d -o indigo -g indigo ${vncdir}
