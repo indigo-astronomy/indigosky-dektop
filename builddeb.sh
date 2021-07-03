@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=0.7
+VERSION=0.8
 
 DEBFULLNAME="Rumen Bogdanovski"
 EMAIL="rumen@skyarchive.org"

@@ -3,6 +3,8 @@ xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml etc/xdg/xfce4/xfconf/xfce-perch
 xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml
 xfce4/xfconf/xfce-perchannel-xml/xsettings.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml-isd
 
+xfce4/kioskrc /etc/xdg/xfce4/kiosk
+
 artwork/backgrounds/* usr/share/backgrounds
 artwork/icons/* usr/share/icons
 
