@@ -10,6 +10,12 @@ file="/usr/share/applications/exo-web-browser.desktop"
 file="/usr/share/applications/exo-mail-reader.desktop"
 [ -f ${file}.backup ] && mv ${file}.backup ${file}
 
+file="/usr/share/applications/xfce4-web-browser.desktop"
+[ -f ${file}.backup ] && mv ${file}.backup ${file}
+
+file="/usr/share/applications/xfce4-mail-reader.desktop"
+[ -f ${file}.backup ] && mv ${file}.backup ${file}
+
 file="/usr/share/applications/pavucontrol.desktop"
 [ -f ${file}.backup ] && mv ${file}.backup ${file}
 

@@ -9,7 +9,7 @@ Vcs-Git: git://github.com/indigo-astronomy/indigosky.git
 
 Package: indigosky-desktop
 Architecture: all
-Depends: xfce4, xfce4-terminal, tigervnc-standalone-server, mousepad, xinit, materia-gtk-theme, galculator, bc, indigo-control-panel, ain-imager
+Depends: xfce4, xfce4-terminal, dbus-x11, tigervnc-standalone-server, mousepad, xinit, materia-gtk-theme, galculator, bc, indigo-control-panel, ain-imager
 Description: IndigoSky Desktop environment
  IndigoSky is a Linux distribution for astro photography based on indigo framework.
  This package installs a light weight graphical user environment and remote desktop service on top of the standard IndigoSky Distribution.
