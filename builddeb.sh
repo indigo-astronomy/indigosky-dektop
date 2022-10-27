@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=0.10
+VERSION=0.11
 DEBFULLNAME="Rumen Bogdanovski"
 EMAIL="rumenastro@gmail.com"
 
