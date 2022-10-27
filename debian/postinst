@@ -37,6 +37,5 @@ cp ${lightdmdir}/lightdm-gtk-greeter.conf-isd/lightdm-gtk-greeter.conf ${lightdm
 
 systemctl enable indigovnc.service
 systemctl start indigovnc.service
-systemctl restart lightdm
 
 exit 0
