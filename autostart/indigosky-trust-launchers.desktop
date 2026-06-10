@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=IndigoSky Trust Launchers
-Exec=sh -c 'for f in "$HOME/Desktop/indigo-control-panel.desktop" "$HOME/Desktop/ain-imager.desktop" "$HOME/Desktop/ain-viewer.desktop"; do [ -f "$f" ] && gio set "$f" metadata::trusted true 2>/dev/null; done'
+Exec=sh -c 'sleep 3; gio set "$HOME/Desktop/indigo-control-panel.desktop" metadata::trusted true 2>/dev/null; gio set "$HOME/Desktop/ain-imager.desktop" metadata::trusted true 2>/dev/null; gio set "$HOME/Desktop/ain-viewer.desktop" metadata::trusted true 2>/dev/null'
 NoDisplay=true
 X-GNOME-Autostart-enabled=true
