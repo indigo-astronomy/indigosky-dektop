@@ -1,8 +1,8 @@
 #!/bin/sh
 
-VERSION=0.11
-DEBFULLNAME="Rumen Bogdanovski"
-EMAIL="rumenastro@gmail.com"
+VERSION=0.13
+export DEBFULLNAME="Rumen Bogdanovski"
+export EMAIL="rumenastro@gmail.com"
 
 __check_file_exits() {
     [ ! -f ${1} ] && { echo "file '${1}' not found"; exit 1; }
